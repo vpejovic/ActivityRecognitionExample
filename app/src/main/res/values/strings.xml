@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ActivityRecognitionExample</string>
+    <string name="permission_activity_rationale">This really needs your activity info</string>
+    <string name="ok">OK</string>
 </resources>

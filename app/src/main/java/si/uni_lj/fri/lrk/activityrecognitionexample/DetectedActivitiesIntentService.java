@@ -88,8 +88,10 @@ public class DetectedActivitiesIntentService extends IntentService {
 
             // TODO: Send the transition descriptions to MainActivity via Broadcast
             Intent intentBcast = new Intent(MainActivity.ATBroadcastReceiver.TRANSITIONS_RECEIVER_ACTION);
-            intentBcast.putExtra(MainActivity.ATBroadcastReceiver.TRANSITIONS_TEXT, output.toString());
+            intentBcast.putExtra(MainActivity.ATBroadcastReceiver.TRANSITIONS_TEXT,
+                    output.toString());
             sendBroadcast(intentBcast);
+
         }
     }
 }
